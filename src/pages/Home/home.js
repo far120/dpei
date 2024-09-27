@@ -3,20 +3,20 @@ import Footer from './footer';
 // import CardData from './index.json'; // Renamed for clarity
 
 export default function Home() {
-    const [show, setShow] = useState([]); // Use imported JSON data directly
-    const [loading, setLoading] = useState(false); // Set loading to false since data is imported
+    const [show, setShow] = useState([]); 
+
 
     useEffect(() => {
         fetch("http://localhost:9000/carrsol")
         .then(response => response.json())
         .then(data => {
             setShow(data);
-            setLoading(false);
+           
         })
     }, []); 
 
-    if (loading) {
-        return (
+    if (! show ) {
+         (
             <div className="spinner-border text-primary" role="status">
                 <span className="sr-only">Loading...</span>
             </div>

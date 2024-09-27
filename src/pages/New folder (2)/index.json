@@ -1,0 +1,91 @@
+[
+    {
+      "ID": 1,
+      "Title": "Aswan Nile Adventure",
+      "src1": "./img/aswan.jpg",
+      "src2": "./img/aswan2.jpg",
+      "src3": "./img/aswan3.jpg",
+      "Rating": 4.8,
+      "Review_Numbers": 350,
+      "Description": "Explore the beauty of the Nile River in Aswan with traditional boat rides and guided tours of ancient temples.",
+      "Price": 1000
+    },
+    {
+      "ID": 2,
+      "Title": "Cairo Citadel Tour",
+      "src1": "./img/Citadel.jpg",
+      "src2": "./img/Citadel2.jpg",
+      "src3": "./img/Citadel3.jpg",
+      "Rating": 4.6,
+      "Review_Numbers": 420,
+      "Description": "Discover the history of Cairo's Citadel, a fortress offering panoramic views of the city and a rich history dating back to Salah al-Din.",
+      "Price": 1050
+    },
+    {
+      "ID": 3,
+      "Title": "Siwa Oasis Experience",
+      "src1": "./img/siwa.jpeg",
+      "src2": "./img/siwa2.jpg",
+      "src3": "./img/siwa3.jpg",
+      "Rating": 4.9,
+      "Review_Numbers": 280,
+      "Description": "A journey to Siwa Oasis, a peaceful retreat in the Egyptian desert, known for its hot springs and scenic salt lakes.",
+      "Price": 1500
+    },
+    {
+      "ID": 4,
+      "Title": "El Alamein Battlefield Tour",
+      "src1": "./img/ElAlamein.jpg",
+      "src2": "./img/el_alamein2.jpeg",
+      "src3": "./img/el_alamein3.jpg",
+      "Rating": 4.5,
+      "Review_Numbers": 220,
+      "Description": "Visit the historic site of the World War II Battle of El Alamein and learn about its significance in shaping world history.",
+      "Price": 1000
+    },
+    {
+      "ID": 5,
+      "Title": "Egyptian Museum Tour",
+      "src1": "./img/Museum.jpg",
+      "src2": "./img/Museum2.jpg",
+      "src3": "./img/Museum3.jpg",
+      "Rating": 4.7,
+      "Review_Numbers": 500,
+      "Description": "Dive into Egypt's rich history with a visit to the Egyptian Museum, home to some of the world's most important ancient artifacts.",
+      "Price": 1200
+    },
+    {
+      "ID": 6,
+      "Title": "Egypt High-Speed Train Journey",
+      "src1": "./img/Train.jpg",
+      "src2": "./img/train2.jpg",
+      "src3": "./img/train3.jpeg",
+      "Rating": 4.2,
+      "Review_Numbers": 180,
+      "Description": "Experience modern Egypt with a ride on the new high-speed train, connecting key cities across the country in comfort and speed.",
+      "Price": 1050
+    },
+    {
+      "ID": 7,
+      "Title": "Walkway on the Nile",
+      "src1": "./img/walkway.jpg",
+      "src2": "./img/walkway2.jpg",
+      "src3": "./img/walkway3.jpg",
+      "Rating": 4.9,
+      "Review_Numbers": 600,
+      "Description": "Take a relaxing stroll along the Nile promenade, a perfect spot for tourists and locals alike to enjoy the river's beauty.",
+      "Price": 1100
+    },
+    {
+      "ID": 8,
+      "Title": "Pyramids of Giza Tour",
+      "src1": "./img/Pyramids.png",
+      "src2": "./img/Pyramids2.jpg",
+      "src3": "./img/Pyramids3.jpg",
+      "Rating": 5.0,
+      "Review_Numbers": 700,
+      "Description": "Explore the iconic Pyramids of Giza, one of the Seven Wonders of the Ancient World, and uncover the mysteries of ancient Egypt.",
+      "Price": 1500
+    }
+  ]
+  

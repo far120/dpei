@@ -12,6 +12,7 @@ import Dashboard from "./pages/admin/dashboard";
 import Dashboardupdate from "./pages/admin/dashboardupdate";
 import Protect from "./pages/auth/protect";
 import Error  from "./Erorr";
+import Packages from "./pages/tourlist.js/packages";
 
 
 
@@ -32,6 +33,7 @@ function App() {
       <Route path="/signup" element={<Signup />} />
       <Route path="/login" element={<Login />} />
       <Route path="/" element={<Home />} />
+      <Route path="/packages" element={<Packages />} />
       <Route path="*" element={<Error />} />  
 
 

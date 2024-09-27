@@ -35,7 +35,7 @@ export default function Home() {
             value.person === "admin" && (
               <Link to="/dashboard" className="nav-link mx-2">Dashboard</Link>
           )}
-          <Link to="/tourlist" className="nav-link mx-2">Tour List</Link>
+          <Link to="/packages" className="nav-link mx-2">Tour List</Link>
           <Link to="/cart" className="nav-link mx-2">
             <i className="fa-solid fa-cart-shopping" aria-hidden="true"></i> Cart
           </Link>
