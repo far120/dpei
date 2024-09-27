@@ -1,0 +1,22 @@
+.footer {
+    background-color: #343a40; 
+    color: #f8c745; 
+}
+
+.payment-icons {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.payment-icon {
+    width: 30px; 
+    height: auto;
+    margin: 5px;
+   
+    
+}
+
+.text-gold {
+    color: #f8c745; 
+}

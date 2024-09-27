@@ -1,0 +1,67 @@
+/* Navigation Bar Styling */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.navbar-logo {
+  height: 50px; /* Adjust height as necessary */
+}
+
+/* Navigation Links */
+.nav-link {
+  color: #333; /* Default text color */
+  transition: color 0.3s, transform 0.3s, text-decoration 0.3s; /* Smooth color and transform transition */
+  text-decoration: none; /* Remove underline by default */
+}
+
+.nav-link:hover {
+  color: #007bff; /* Change this to your desired hover color */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Auth Button Styling */
+.auth-button {
+  border-radius: 20px; /* Rounded buttons */
+  transition: background-color 0.3s, color 0.3s; /* Smooth background and color transition */
+  padding: 8px 16px; /* Add some padding for better click area */
+}
+
+.auth-button:hover {
+  background-color: #007bff; /* Change to your desired hover color */
+  color: #fff; /* Change text color on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Dropdown Icon */
+.dropdown-icon {
+  border-radius: 50%; /* Ensure the icon is circular */
+}
+
+/* Search Input */
+#top-search .form-control {
+  border-radius: 20px; /* Rounded search input */
+  transition: border-color 0.3s; /* Smooth border transition */
+}
+
+#top-search .form-control:focus {
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Light shadow effect on focus */
+}
+
+/* Search Button Styling */
+#search-button {
+  border-radius: 20px; /* Rounded search button */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth background and transform transition */
+}
+
+#search-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Align Auth Section to the Right */
+.navbar__auth {
+  margin-left: auto; /* Align auth section to the right */
+}
