@@ -32,9 +32,16 @@ export default function Home() {
         <div className="navbar__links d-flex align-items-center">
           <Link to="/" className="nav-link mx-2">Home</Link>
           {window.localStorage.getItem("user") && 
-            value.person === "admin" && (
+            value.person === "admin" ? (
+              <>
               <Link to="/dashboard" className="nav-link mx-2">Dashboard</Link>
+              <Link to="/add" className="nav-link mx-2">add</Link>
+              </>
+          
+         ) : (
+            null
           )}
+
           <Link to="/packages" className="nav-link mx-2">Tour List</Link>
           <Link to="/cart" className="nav-link mx-2">
             <i className="fa-solid fa-cart-shopping" aria-hidden="true"></i> Cart

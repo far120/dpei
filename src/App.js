@@ -13,6 +13,8 @@ import Dashboardupdate from "./pages/admin/dashboardupdate";
 import Protect from "./pages/auth/protect";
 import Error  from "./Erorr";
 import Packages from "./pages/tourlist.js/packages";
+import Add from "./pages/admin/add";
+import Updatedata from "./pages/admin/updatedata";
 
 
 
@@ -34,6 +36,7 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/" element={<Home />} />
       <Route path="/packages" element={<Packages />} />
+      <Route path="/add" element={<Add />} />
       <Route path="*" element={<Error />} />  
 
 
@@ -42,6 +45,9 @@ function App() {
         <>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/dashboard/dashboardupdate/:id" element={<Dashboardupdate />} />
+          <Route path="/edit/:id" element={<Updatedata />} />
+
+
         </>
       ) : (
         null)

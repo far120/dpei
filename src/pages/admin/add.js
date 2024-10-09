@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import axios from "axios"; // Import Axios
+import axios from "axios"; 
 import { Link, useNavigate, useParams } from "react-router-dom";
-
-export default function Updatedata() {
+import './add.css'
+export default function Adddata() {
     const navigate = useNavigate();
     const [Title, setTitle] = useState('');
     const [Price, setPrice] = useState();
@@ -11,49 +11,33 @@ export default function Updatedata() {
     const [Description, setDescription] = useState('');
     const[Review_Numbers , setReviewNumbers] = useState();
     const [images, setImages] = useState();
-const {id } =useParams();
-    useEffect(() => {
-            fetch(`http://localhost:9000/packages/${id}`)
-           .then(res => res.json() )
-           .then(data => {
-            setTitle(data.Title);
-            setPrice(data.Price);
-            setdisPrice(data.disPrice);
-            setRating(data.Rating);
-            setDescription(data.Description);
-            setReviewNumbers(data.Review_Numbers);
-            setImages(data.src1);
-           
-            })
-           .catch(error => {
-                console.error('Error fetching :', error);
-            });
-        
-    }, [id]);
 
-    const updateData = (e) => {
+
+
+
+   
+    const addData = (e) => {
         e.preventDefault();
     
-        axios.put(`http://localhost:9000/packages/${id}`, {
-            Title,
-            Price,
-            disPrice,
-            Rating,
-            Description,
-            Review_Numbers,
-            src1:`/img/${images}`,
-
+        axios.post("http://localhost:9000/packages", {
+    Title,
+    Price,
+    disPrice,
+    Rating,
+    Description,
+    Review_Numbers,
+    src1:`/img/${images}`,
         })
         .then(response => {  
-            alert('Product added successfully!');
-            setTitle('');
-            setPrice('');
-            setdisPrice('');
-            setRating('');
-            setDescription('');
-            setReviewNumbers('');
-            setImages('');
-            navigate('/packages');
+                alert('Product added successfully!');
+                setTitle('');
+                setPrice('');
+                setdisPrice('');
+                setRating('');
+                setDescription('');
+                setReviewNumbers('');
+                setImages('');
+                navigate('/packages');
         })
         .catch(error => {
             console.error('Error adding product:', error);
@@ -62,9 +46,10 @@ const {id } =useParams();
 }
   
 
-        return (
-            <div className="container">
-                <form >
+return (
+        <div className="container mt-5">
+            <h2 className="text-center mb-4">Add New Product</h2>
+            <form onSubmit={addData} className="border p-4 rounded shadow">
                 <div className="mb-3">
                     <label className="form-label">Title</label>
                     <input
@@ -132,8 +117,8 @@ const {id } =useParams();
                         className="form-control"
                     />
                 </div>
-                    <button onClick={updateData} type="submit">Add Product</button>
-                </form>
-            </div>
-        );
-        }
+                <button type="submit" className="btn btn-primary w-100">Add Product</button>
+            </form>
+        </div>
+    );
+}
