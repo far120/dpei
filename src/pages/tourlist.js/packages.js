@@ -66,7 +66,7 @@ export default function Packages() {
           }}
         >
           <div className="image-half position-relative">
-            <Link to={`/${item.ID}`}>
+            <Link to={`/packageid`}>
             <img
   src={item.src1 ? item.src1 : `/img/${item.ID}`}
   className="card-img-top"
@@ -92,7 +92,16 @@ export default function Packages() {
             </div>
             <p className="card-text">{item.Description}</p>
             <div className="price mb-2">
-              <i className="fa-solid fa-star"> {item.Rating}</i>
+              {/* <i className="fa-solid fa-star"> {item.Rating}</i> */}
+              <i> {Array.from({ length: 5 }, (_, index) => (
+    <span key={index} style={{ color: '#f39c12', cursor: 'default' }}>
+      {item.Rating > index ? (
+        <i className="fa-solid fa-star"></i> 
+      ) : (
+        <i className="fa-regular fa-star"></i> // Empty star
+      )}
+    </span>
+  ))}</i>
               { item.disPrice > 0 ? (
                 <>
                   <p className="h3 text-gold">
@@ -108,7 +117,7 @@ export default function Packages() {
               )}
             </div>
             <div className="mt-auto">
-              <Link to={`/${item.ID}`} className="btn btn-primary mb-2 w-100">Show</Link>
+              <Link to={`/packageid`} className="btn btn-primary mb-2 w-100">Show</Link>
               <Link to={`/cart/${item.ID}`} className="btn btn-outline-primary mb-2 w-100">Add to Cart</Link>
               {window.localStorage.getItem("user") && value.person === "admin" && (
                 <>

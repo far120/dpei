@@ -1,0 +1,43 @@
+[
+{
+    "tourID":"1",
+    "rating": 4,
+    "tourName": "From Aswan: 4-Day Nile Cruise from Aswan to Luxor with Guide",
+    "overview": "Explore the legendary Nile River on a 3-night cruise from Aswan to Luxor. Travel in 5-star comfort with full board and a private guide. Choose to add an optional day trip to see the mighty Abu Simbel.",
+    "description": "Cruise the Nile on a 5-star ship from Aswan to Luxor, stopping to see the sights of Kom Ombo, Edfu, Karnak Temple, Hatshepsut Temple, and the Valley of the Kings along the way. With full board, your meals are taken care of, and your own private guide will show you the best of ancient Egypt.",
+    "duration": "1 Day",
+    "destination": "Luxor",
+    "meetUpOnMap":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27378.661756833033!2d32.66139485!3d25.686001349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1449144d810b1d13%3A0xdccb131aed31d344!2sLuxor%20City%2C%20Luxor%2C%20Luxor%20Governorate!5e1!3m2!1sen!2seg!4v1727282417468!5m2!1sen!2seg",
+    "price": {
+        "adult": 30,
+        "kids": 20
+    },
+    "discount": [
+        {
+            "code":"111",
+            "discount":0.1
+        },
+        {
+            "code":"222",
+            "discount":0.2
+        }
+    ],
+    "coverPhoto": "/img/tour_1/11.jpg",
+    "gallery": 
+        {
+            "photo1": "/img/11.jpg",
+            "photo2": "/img/12.jpg",
+            "photo3": "/img/13.jpg",
+            "photo4": "/img/14.jpg"
+        },
+    "reviews": [
+        {
+            "userID":"1",
+            "photo1": "/img/tour_1/11.jpg",
+            "review_rating": 3.5,
+            "text": "very good"
+        }
+    ],
+    "category": "Nile Cruise, Scheduled."
+}
+]

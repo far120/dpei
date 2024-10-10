@@ -1,0 +1,76 @@
+#photo-gallery {
+    position: relative;
+    height: 60%; /* Ensure the section fills the space */
+    overflow: hidden; /* Hide overflow content */
+    padding: 20px; /* Padding for the gallery */
+    margin-bottom: 1%;
+}
+
+#photo-gallery > .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100%; /* Ensure row takes full height */
+}
+
+.photo-frame {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.photo-frame img {
+    height: 100%;
+    object-fit: cover; /* Make sure the image fits within the frame without distortion */
+    border-radius: 5px;
+}
+#side-photos img {
+    height: 90% !important;
+    object-fit: cover; /* Make sure the image fits within the frame without distortion */
+    border-radius: 5px;
+}
+#tour-details{
+    padding: 3%;
+}
+#side-photos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#select-form{
+    background-color: #1a2b49;
+    color: white;
+    border-radius: 40px;
+    padding: 5%;
+}
+#select-form .btn-group{
+    margin-right: 7%;
+    width: 20%;
+}
+#price{
+    display: flex;
+    border: 2px solid gray;
+    padding: 1%;
+    align-items: center;
+}
+.rating {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.stars i {
+    color: #ffdd00; 
+}
+.stars.none i {
+    color: #000000 !important; 
+}
+
+.reviews {
+    margin-left: 10px;
+    color: #555;
+    font-size: 0.9em;
+}

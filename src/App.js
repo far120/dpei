@@ -15,6 +15,7 @@ import Error  from "./Erorr";
 import Packages from "./pages/tourlist.js/packages";
 import Add from "./pages/admin/add";
 import Updatedata from "./pages/admin/updatedata";
+import TourDetails from "./pages/tourlist.js/packageid";
 
 
 
@@ -36,6 +37,7 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/" element={<Home />} />
       <Route path="/packages" element={<Packages />} />
+      <Route path="/packageid" element={<TourDetails/>}/>
       <Route path="/add" element={<Add />} />
       <Route path="*" element={<Error />} />  
 
